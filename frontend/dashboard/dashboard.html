@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pattern Prep | Dashboard</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="topbar">
+    <a href="../index.html" class="brand">Pattern Prep</a>
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="../assessment/assessment.html">Assessment</a>
+      <a href="../learning/learning.html">Learning</a>
+      <a href="../trainer/trainer.html">Trainer</a>
+      <a href="../practice/practice.html">Practice</a>
+      <a href="../interview/interview.html">Interview</a>
+      <a href="../ai/ai.html">AI</a>
+      <a href="../analytics/analytics.html">Analytics</a>
+      <a href="../index.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="dashboard-container">
+
+    <!-- Welcome Section -->
+    <section class="dashboard-hero card">
+      <div class="hero-left">
+        <p class="eyebrow">Welcome Back 👋</p>
+        <h1 id="welcome-user">Hello, User</h1>
+        <p id="learning-level" class="hero-copy">Keep improving one pattern at a time.</p>
+      </div>
+      <div class="hero-right">
+        <div class="hero-stat">
+          <h3>Current Level</h3>
+          <p id="current-level">Intermediate</p>
+        </div>
+        <div class="hero-stat">
+          <h3>Current Streak</h3>
+          <p id="current-streak">12 Days 🔥</p>
+        </div>
+        <div class="hero-stat">
+          <h3>Overall Progress</h3>
+          <p id="overall-progress">42%</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Continue Learning -->
+    <section class="card recommendation-card">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Continue Your Journey</p>
+          <h2>Recommended Pattern</h2>
+        </div>
+      </div>
+      <div class="recommendation-grid">
+        <div class="recommendation-info">
+          <h2 id="recommended-pattern">Sliding Window</h2>
+          <p id="recommendation-description">
+            Based on your latest assessment, you should strengthen your Sliding Window concepts before moving to Two Pointers.
+          </p>
+          <button class="btn btn-primary">Continue Learning</button>
+        </div>
+        <div class="recommendation-progress">
+          <h3>Progress</h3>
+          <div class="progress-bar">
+            <div class="progress-fill" id="pattern-progress"></div>
+          </div>
+          <p id="progress-text">3 / 10 Questions Completed</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="summary-grid">
+      <article class="progress-card card">
+        <h3>Patterns Completed</h3>
+        <p class="metric" id="patterns-completed">6</p>
+        <p>Core DSA patterns mastered.</p>
+      </article>
+      <article class="progress-card card">
+        <h3>Questions Solved</h3>
+        <p class="metric" id="questions-solved">48</p>
+        <p>Across LeetCode, GFG and Practice Zone.</p>
+      </article>
+      <article class="progress-card card">
+        <h3>Assessment Score</h3>
+        <p class="metric" id="assessment-score">82%</p>
+        <p>Latest Pattern Assessment.</p>
+      </article>
+      <article class="progress-card card">
+        <h3>Interview Attempts</h3>
+        <p class="metric" id="interview-attempts">12</p>
+        <p>Timed Interview Sessions Completed.</p>
+      </article>
+      <article class="progress-card card">
+        <h3>Recognition Score</h3>
+        <p class="metric" id="recognition-score">89%</p>
+        <p>Pattern Recognition Trainer Performance.</p>
+      </article>
+    </section>
+
+    <!-- Quick Access -->
+    <section class="card">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Quick Access</p>
+          <h2>Continue Your Preparation</h2>
+        </div>
+      </div>
+      <div class="feature-grid dashboard-grid">
+        <a class="feature-card card" href="../assessment/assessment.html">
+          <h3>Assessment</h3>
+          <p>Take the Pattern Assessment and discover your level.</p>
+        </a>
+        <a class="feature-card card" href="../learning/learning.html">
+          <h3>Learning</h3>
+          <p>Learn DSA patterns from Beginner to Advanced.</p>
+        </a>
+        <a class="feature-card card" href="../trainer/trainer.html">
+          <h3>Pattern Trainer</h3>
+          <p>Improve your pattern recognition speed.</p>
+        </a>
+        <a class="feature-card card" href="../practice/practice.html">
+          <h3>Practice Zone</h3>
+          <p>Solve curated LeetCode, GFG and CodeChef problems.</p>
+        </a>
+        <a class="feature-card card" href="../interview/interview.html">
+          <h3>Interview Simulation</h3>
+          <p>Practice timed coding interviews.</p>
+        </a>
+        <a class="feature-card card" href="../ai/ai.html">
+          <h3>AI Assistant</h3>
+          <p>Get AI hints and interview feedback.</p>
+        </a>
+        <a class="feature-card card" href="../analytics/analytics.html">
+          <h3>Analytics</h3>
+          <p>View detailed learning insights and progress.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Recent Activity -->
+    <section class="card">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Recent Activity</p>
+          <h2>Your Latest Progress</h2>
+        </div>
+      </div>
+      <div class="activity-list">
+        <div class="activity-item">✅ Completed Sliding Window Assessment</div>
+        <div class="activity-item">✅ Solved 5 Two Pointer Questions</div>
+        <div class="activity-item">✅ Completed Blind Interview Mode</div>
+        <div class="activity-item">✅ AI suggested Graphs as your next topic</div>
+      </div>
+    </section>
+
+    <!-- Weak Patterns -->
+    <section class="card">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Focus Areas</p>
+          <h2>Patterns That Need More Practice</h2>
+        </div>
+      </div>
+      <div class="weak-pattern-grid">
+        <div class="weak-card">
+          <h3>Dynamic Programming</h3>
+          <p>Accuracy : <strong>46%</strong></p>
+          <a href="../learning/learning.html" class="btn btn-secondary">Practice Now</a>
+        </div>
+        <div class="weak-card">
+          <h3>Graphs</h3>
+          <p>Accuracy : <strong>52%</strong></p>
+          <a href="../learning/learning.html" class="btn btn-secondary">Practice Now</a>
+        </div>
+        <div class="weak-card">
+          <h3>Backtracking</h3>
+          <p>Accuracy : <strong>59%</strong></p>
+          <a href="../learning/learning.html" class="btn btn-secondary">Practice Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Roadmap -->
+    <section class="card">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Learning Roadmap</p>
+          <h2>Your Current Journey</h2>
+        </div>
+      </div>
+      <div class="roadmap">
+        <div class="roadmap-step completed">✓ Arrays</div>
+        <div class="roadmap-step completed">✓ Sliding Window</div>
+        <div class="roadmap-step active">➜ Two Pointers</div>
+        <div class="roadmap-step">Prefix Sum</div>
+        <div class="roadmap-step">Binary Search</div>
+        <div class="roadmap-step">Dynamic Programming</div>
+      </div>
+    </section>
+
+    <!-- Motivation -->
+    <section class="card motivation-card">
+      <h2>🚀 Keep Going!</h2>
+      <p>
+        Consistency beats intensity. Solve just a few problems every day, recognize the underlying patterns, and your interview confidence will improve naturally.
+      </p>
+      <a href="../practice/practice.html" class="btn btn-primary">Solve Today's Questions</a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Pattern Prep</p>
+    <p>Learn DSA Patterns, Not Just Solutions.</p>
+  </footer>
+
+  <script src="../shared/auth.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

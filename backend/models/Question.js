@@ -18,7 +18,7 @@ const QuestionSchema = new mongoose.Schema(
     },
     algoId: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Algorithm',
+      ref: 'Pattern',
       required: true,
     },
     tags: {

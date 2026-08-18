@@ -42,8 +42,8 @@ exports.createAlgorithm = async (req, res, next) => {
       return res.status(400).json({ error: 'Name, category, and description are required' });
     }
 
-    const existingPattern = await Pattern.findOne({ name });
-    if (existingPattern) {
+    const patternExists = await Pattern.findOne({ name });
+    if (patternExists) {
       return res.status(400).json({ error: 'Pattern already exists' });
     }
 

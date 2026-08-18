@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern Prep | AI Assistant</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="ai.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../index.html">Pattern Prep</a>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../login.html">Login</a>
+        <a href="../register.html">Register</a>
+        <a href="../dashboard/dashboard.html">Dashboard</a>
+        <a href="../assessment/assessment.html">Assessment</a>
+        <a href="../learning/learning.html">Learning</a>
+        <a href="../trainer/trainer.html">Trainer</a>
+        <a href="../practice/practice.html">Practice</a>
+        <a href="../interview/interview.html">Interview</a>
+        <a href="ai.html" aria-current="page">AI</a>
+        <a href="../analytics/analytics.html">Analytics</a>
+      </nav>
+    </header>
+
+    <main class="page-layout">
+      <section class="hero-panel card">
+        <div class="hero-main">
+          <p class="eyebrow">AI assistant</p>
+          <h1>Receive helpful hints and feedback that sharpen your solution process.</h1>
+          <p class="hero-copy">Use the assistant to unpack the next best step, understand a pattern clearly, and refine your interview communication.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="feature-grid ai-grid">
+          <article class="feature-card card">
+            <h3>AI Hint Generator</h3>
+            <p>Get guided hints for the next move without revealing the full solution.</p>
+          </article>
+          <article class="feature-card card">
+            <h3>Hint Levels</h3>
+            <p>Choose from light hints, deeper guidance, or a full walkthrough.</p>
+          </article>
+          <article class="feature-card card">
+            <h3>Interview Feedback</h3>
+            <p>Review clarity, pacing, and structure for your interview answers.</p>
+          </article>
+          <article class="feature-card card">
+            <h3>Strengths</h3>
+            <p>Spot the areas where your approach is already strong.</p>
+          </article>
+          <article class="feature-card card">
+            <h3>Weaknesses</h3>
+            <p>See where you tend to overcomplicate or lose momentum.</p>
+          </article>
+          <article class="feature-card card">
+            <h3>Suggestions</h3>
+            <p>Receive targeted next steps to improve speed and confidence.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card ai-chat-shell">
+        <h3>Mock mentor chat</h3>
+        <div id="aiPromptButtons" class="hero-actions"></div>
+        <div id="aiChat" class="ai-chat"></div>
+        <div class="ai-input-row">
+          <input id="aiChatInput" type="text" placeholder="Ask for a hint, explanation, or next step..." />
+          <button id="sendAiMessage" class="btn btn-primary">Send</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="../shared/auth.js"></script>
+    <script src="ai.js"></script>
+  </body>
+</html>

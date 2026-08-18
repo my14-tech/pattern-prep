@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Prep | Pattern Trainer</title>
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="trainer.css">
+</head>
+
+<body>
+
+    <!-- ==========================
+         Navigation
+    =========================== -->
+
+    <header class="topbar">
+
+        <a class="brand" href="../index.html">Pattern Prep</a>
+
+        <nav class="nav-links">
+
+            <a href="../index.html">Home</a>
+            <a href="../login.html">Login</a>
+            <a href="../register.html">Register</a>
+            <a href="../dashboard/dashboard.html">Dashboard</a>
+            <a href="../assessment/assessment.html">Assessment</a>
+            <a href="../learning/learning.html">Learning</a>
+            <a href="trainer.html" aria-current="page">Trainer</a>
+            <a href="../practice/practice.html">Practice</a>
+            <a href="../interview/interview.html">Interview</a>
+            <a href="../ai/ai.html">AI</a>
+            <a href="../analytics/analytics.html">Analytics</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <main class="page-layout">
+
+        <!-- ==========================
+             Hero
+        =========================== -->
+
+        <section class="hero-panel card">
+
+            <div class="hero-main">
+
+                <p class="eyebrow">
+                    Pattern Recognition Trainer
+                </p>
+
+                <h1>
+                    Learn to identify the correct DSA pattern before writing code.
+                </h1>
+
+                <p class="hero-copy">
+
+                    Read the problem carefully, identify the underlying pattern,
+                    and understand why that pattern is the correct choice.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================
+             Progress Section
+        =========================== -->
+
+        <section class="trainer-summary">
+
+            <div class="summary-card card">
+
+                <h3>Question</h3>
+
+                <p id="questionNumber">
+                    1 / 20
+                </p>
+
+            </div>
+
+            <div class="summary-card card">
+
+                <h3>Score</h3>
+
+                <p id="score">
+                    0
+                </p>
+
+            </div>
+
+            <div class="summary-card card">
+
+                <h3>Accuracy</h3>
+
+                <p id="accuracy">
+                    0%
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================
+             Progress Bar
+        =========================== -->
+
+        <section class="card">
+
+            <div class="progress-bar">
+
+                <span id="progressFill" style="width:0%"></span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================
+             Question Card
+        =========================== -->
+
+        <section class="trainer-card card">
+
+            <h2 id="questionTitle">
+
+                Loading Question...
+
+            </h2>
+
+            <p id="questionDescription">
+
+            </p>
+
+        </section>
+
+
+
+        <!-- ==========================
+             Options
+        =========================== -->
+
+        <section
+            class="trainer-options"
+            id="optionsContainer">
+
+        </section>
+
+
+
+        <!-- ==========================
+             Result
+        =========================== -->
+
+        <section
+            class="result-card card"
+            id="resultContainer">
+
+        </section>
+
+
+
+        <!-- ==========================
+             Navigation Buttons
+        =========================== -->
+
+        <section class="trainer-actions">
+
+            <button
+                class="btn btn-secondary"
+                id="restartBtn">
+
+                Restart
+
+            </button>
+
+            <button
+                class="btn btn-primary"
+                id="nextBtn">
+
+                Next Question →
+
+            </button>
+
+        </section>
+
+
+
+        <!-- ==========================
+             Finish Screen
+        =========================== -->
+
+        <section
+            class="card"
+            id="finishScreen"
+            style="display:none;">
+
+            <h2>
+
+                🎉 Training Completed
+
+            </h2>
+
+            <p id="finalScore"></p>
+
+            <p id="finalAccuracy"></p>
+
+            <p id="weakPatterns"></p>
+
+            <button
+                class="btn btn-primary"
+                id="restartTraining">
+
+                Train Again
+
+            </button>
+
+        </section>
+
+    </main>
+
+
+
+    <script src="../shared/auth.js"></script>
+    <script src="trainerData.js"></script>
+    <script src="trainerRender.js"></script>
+    <script src="trainer.js"></script>
+
+</body>
+
+</html>

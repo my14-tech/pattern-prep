@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Pattern Prep | Practice Zone</title>
+
+    <link rel="stylesheet"
+          href="../styles.css">
+
+    <link rel="stylesheet"
+          href="practice.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <a class="brand"
+       href="../index.html">
+
+        Pattern Prep
+
+    </a>
+
+    <nav class="nav-links">
+
+        <a href="../index.html">Home</a>
+
+        <a href="../login.html">Login</a>
+
+        <a href="../register.html">Register</a>
+
+        <a href="../dashboard/dashboard.html">Dashboard</a>
+
+        <a href="../assessment/assessment.html">Assessment</a>
+
+        <a href="../learning/learning.html">Learning</a>
+
+        <a href="../trainer/trainer.html">Trainer</a>
+
+        <a href="practice.html"
+           aria-current="page">
+
+            Practice
+
+        </a>
+
+        <a href="../interview/interview.html">Interview</a>
+
+        <a href="../ai/ai.html">AI</a>
+
+        <a href="../analytics/analytics.html">Analytics</a>
+
+    </nav>
+
+</header>
+
+<main class="page-layout">
+
+    <!-- Hero -->
+
+    <section class="hero-panel card">
+
+        <div class="hero-main">
+
+            <p class="eyebrow">
+
+                Practice Zone
+
+            </p>
+
+            <h1>
+
+                Strengthen your problem-solving skills by solving carefully selected questions.
+
+            </h1>
+
+            <p class="hero-copy">
+
+                Practice questions grouped by DSA pattern,
+                company, and difficulty.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Progress -->
+
+    <section class="practice-summary">
+
+        <div class="summary-card card">
+
+            <h3>
+
+                Solved
+
+            </h3>
+
+            <p id="solvedCount">
+
+                0 / 0
+
+            </p>
+
+        </div>
+
+        <div class="summary-card card">
+
+            <h3>
+
+                Bookmarked
+
+            </h3>
+
+            <p id="bookmarkCount">
+
+                0
+
+            </p>
+
+        </div>
+
+        <div class="summary-card card">
+
+            <h3>
+
+                Completion
+
+            </h3>
+
+            <p id="completionPercent">
+
+                0%
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Search & Filters -->
+
+    <section class="practice-controls card">
+
+        <input
+            type="text"
+            id="searchQuestion"
+            placeholder="Search question...">
+
+        <select id="patternFilter">
+
+            <option value="All">All Patterns</option>
+
+        </select>
+
+        <select id="difficultyFilter">
+
+            <option value="All">All Difficulties</option>
+
+            <option value="Easy">Easy</option>
+
+            <option value="Medium">Medium</option>
+
+            <option value="Hard">Hard</option>
+
+        </select>
+
+        <select id="companyFilter">
+
+            <option value="All">All Companies</option>
+
+        </select>
+
+    </section>
+
+
+
+    <!-- Recommended -->
+
+    <section class="card">
+
+        <h2>
+
+            Recommended For You
+
+        </h2>
+
+        <div id="recommendedContainer"
+             class="practice-grid">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Questions -->
+
+    <section>
+
+        <h2>
+
+            Practice Questions
+
+        </h2>
+
+        <div id="practiceGrid"
+             class="practice-grid">
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../shared/auth.js"></script>
+<script src="practiceData.js"></script>
+
+<script src="practiceRender.js"></script>
+
+<script src="practice.js"></script>
+
+</body>
+
+</html>

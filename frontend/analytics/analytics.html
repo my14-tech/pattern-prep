@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern Prep | Analytics</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../index.html">Pattern Prep</a>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../login.html">Login</a>
+        <a href="../register.html">Register</a>
+        <a href="../dashboard/dashboard.html">Dashboard</a>
+        <a href="../assessment/assessment.html">Assessment</a>
+        <a href="../learning/learning.html">Learning</a>
+        <a href="../trainer/trainer.html">Trainer</a>
+        <a href="../practice/practice.html">Practice</a>
+        <a href="../interview/interview.html">Interview</a>
+        <a href="../ai/ai.html">AI</a>
+        <a href="analytics.html" aria-current="page">Analytics</a>
+      </nav>
+    </header>
+
+    <main class="page-layout">
+      <section class="hero-panel card">
+        <div class="hero-main">
+          <p class="eyebrow">Performance analytics</p>
+          <h1>See how your preparation is evolving over time.</h1>
+          <p class="hero-copy">Review mastery trends, completed work, and the strongest areas to focus on next.</p>
+        </div>
+      </section>
+
+      <section class="summary-grid" id="analyticsSummary"></section>
+
+      <section class="card">
+        <h3>Pattern mastery</h3>
+        <div id="patternProgressList" class="pattern-progress-list"></div>
+      </section>
+    </main>
+
+    <script src="../shared/auth.js"></script>
+    <script src="analytics.js"></script>
+  </body>
+</html>

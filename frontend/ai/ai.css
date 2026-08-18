@@ -1,0 +1,88 @@
+.ai-chat-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ai-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 200px;
+  max-height: 360px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.ai-message {
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  line-height: 1.6;
+}
+
+.ai-message.user {
+  align-self: flex-end;
+  background: rgba(69, 135, 255, 0.18);
+}
+
+.ai-message.bot {
+  align-self: flex-start;
+}
+
+.ai-input-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.ai-input-row input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  color: #eef4ff;
+}
+
+.hint-box {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-left: 3px solid #4dc3ff;
+  border-radius: 12px;
+  background: rgba(77, 195, 255, 0.08);
+  color: #eaf2ff;
+}
+
+.recommended-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.question-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.company-grid,
+.question-grid,
+.experience-grid,
+.tips-grid,
+.roadmap-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.company-grid,
+.question-grid,
+.experience-grid,
+.tips-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.roadmap-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}

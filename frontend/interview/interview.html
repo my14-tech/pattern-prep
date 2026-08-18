@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Pattern Prep | Interview Hub</title>
+
+    <link rel="stylesheet"
+          href="../styles.css">
+
+    <link rel="stylesheet"
+          href="interview.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <a class="brand"
+       href="../index.html">
+
+        Pattern Prep
+
+    </a>
+
+    <nav class="nav-links">
+
+        <a href="../index.html">Home</a>
+
+        <a href="../login.html">Login</a>
+
+        <a href="../register.html">Register</a>
+
+        <a href="../dashboard/dashboard.html">Dashboard</a>
+
+        <a href="../assessment/assessment.html">Assessment</a>
+
+        <a href="../learning/learning.html">Learning</a>
+
+        <a href="../trainer/trainer.html">Trainer</a>
+
+        <a href="../practice/practice.html">Practice</a>
+
+        <a href="interview.html"
+           aria-current="page">
+
+            Interview
+
+        </a>
+
+        <a href="../ai/ai.html">AI</a>
+
+        <a href="../analytics/analytics.html">Analytics</a>
+
+    </nav>
+
+</header>
+
+
+
+<main class="page-layout">
+
+    <!-- Hero -->
+
+    <section class="hero-panel card">
+
+        <div class="hero-main">
+
+            <p class="eyebrow">
+
+                Interview Hub
+
+            </p>
+
+            <h1>
+
+                Prepare for coding interviews with company-specific roadmaps, experiences and frequently asked questions.
+
+            </h1>
+
+            <p class="hero-copy">
+
+                Everything you need before your next interview in one place.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Statistics -->
+
+    <section class="interview-summary">
+
+        <div class="summary-card card">
+
+            <h3>
+
+                Companies
+
+            </h3>
+
+            <p id="companyCount">
+
+                0
+
+            </p>
+
+        </div>
+
+        <div class="summary-card card">
+
+            <h3>
+
+                Questions
+
+            </h3>
+
+            <p id="questionCount">
+
+                0
+
+            </p>
+
+        </div>
+
+        <div class="summary-card card">
+
+            <h3>
+
+                Experiences
+
+            </h3>
+
+            <p id="experienceCount">
+
+                0
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Search -->
+
+    <section class="interview-controls card">
+
+        <input
+
+            type="text"
+
+            id="searchCompany"
+
+            placeholder="Search company...">
+
+        <select id="difficultyFilter">
+
+            <option value="All">
+
+                All Difficulty
+
+            </option>
+
+            <option value="Easy">
+
+                Easy
+
+            </option>
+
+            <option value="Medium">
+
+                Medium
+
+            </option>
+
+            <option value="Hard">
+
+                Hard
+
+            </option>
+
+        </select>
+
+    </section>
+
+    <section class="card recommended-question-panel">
+        <div class="section-header">
+            <div>
+                <p class="eyebrow">Recommended question</p>
+                <h2>Today's AI-guided interview prompt</h2>
+            </div>
+        </div>
+        <div id="recommendedQuestion"></div>
+    </section>
+
+
+
+    <!-- Companies -->
+
+    <section>
+
+        <h2>
+
+            Top Hiring Companies
+
+        </h2>
+
+        <div
+
+            id="companyGrid"
+
+            class="company-grid">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Roadmap -->
+
+    <section class="card">
+
+        <h2>
+
+            Interview Roadmap
+
+        </h2>
+
+        <div
+
+            id="roadmapContainer"
+
+            class="roadmap-grid">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Frequently Asked Questions -->
+
+    <section>
+
+        <h2>
+
+            Frequently Asked Questions
+
+        </h2>
+
+        <div
+
+            id="questionGrid"
+
+            class="question-grid">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Interview Experiences -->
+
+    <section>
+
+        <h2>
+
+            Interview Experiences
+
+        </h2>
+
+        <div
+
+            id="experienceGrid"
+
+            class="experience-grid">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Company Tips -->
+
+    <section>
+
+        <h2>
+
+            Preparation Tips
+
+        </h2>
+
+        <div
+
+            id="tipsGrid"
+
+            class="tips-grid">
+
+        </div>
+
+    </section>
+
+
+
+</main>
+
+
+
+<script src="../shared/auth.js"></script>
+<script src="interviewData.js"></script>
+
+<script src="interviewRender.js"></script>
+
+<script src="interview.js"></script>
+
+</body>
+
+</html>

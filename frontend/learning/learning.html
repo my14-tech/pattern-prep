@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Prep | Learning</title>
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="learning.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <a class="brand" href="../index.html">
+        Pattern Prep
+    </a>
+
+    <nav class="nav-links">
+
+        <a href="../index.html">Home</a>
+
+        <a href="../dashboard/dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="../assessment/assessment.html">
+            Assessment
+        </a>
+
+        <a href="learning.html" aria-current="page">
+            Learning
+        </a>
+
+        <a href="../trainer/trainer.html">
+            Trainer
+        </a>
+
+        <a href="../practice/practice.html">
+            Practice
+        </a>
+
+        <a href="../interview/interview.html">
+            Interview
+        </a>
+
+        <a href="../ai/ai.html">
+            AI
+        </a>
+
+        <a href="../analytics/analytics.html">
+            Analytics
+        </a>
+
+    </nav>
+
+</header>
+
+<main class="page-layout">
+
+<section class="hero-panel card">
+
+<div class="hero-main">
+
+<p class="eyebrow">
+
+Learning Center
+
+</p>
+
+<h1>
+
+Master DSA Patterns One by One
+
+</h1>
+
+<p class="hero-copy">
+
+Instead of memorizing solutions, learn the underlying
+patterns that appear repeatedly in coding interviews.
+Select a pattern below to study its intuition,
+recognition checklist, algorithm, template,
+practice questions and interview problems.
+
+</p>
+
+</div>
+
+<div class="hero-actions">
+
+<input
+type="text"
+id="searchPattern"
+placeholder="Search Pattern..."
+class="search-input">
+
+</div>
+
+</section>
+
+<section class="learning-layout">
+
+<aside class="learning-sidebar card">
+
+<h2>
+
+DSA Patterns
+
+</h2>
+
+<div id="patternList">
+
+<div class="pattern-card active">
+
+<h3>Sliding Window</h3>
+
+<p>Easy • 15 Questions</p>
+
+</div>
+
+<div class="pattern-card">
+
+<h3>Two Pointer</h3>
+
+<p>Easy • 18 Questions</p>
+
+</div>
+
+<div class="pattern-card">
+
+<h3>Binary Search</h3>
+
+<p>Easy • 20 Questions</p>
+
+</div>
+
+<div class="pattern-card">
+
+<h3>Prefix Sum</h3>
+
+<p>Easy • 10 Questions</p>
+
+</div>
+
+<div class="pattern-card">
+
+<h3>Hash Map</h3>
+
+<p>Easy • 14 Questions</p>
+
+</div>
+
+<div class="pattern-card">
+
+<h3>Stack</h3>
+
+<p>Medium • 15 Questions</p>
+
+</div>
+
+<div class="pattern-card">
+
+<h3>Queue</h3>
+
+<p>Medium • 12 Questions</p>
+
+</div>
+
+<div class="pattern-card">
+
+<h3>Linked List</h3>
+
+<p>Medium • 20 Questions</p>
+
+</div>
+
+<div class="pattern-card">
+
+<h3>Trees</h3>
+
+<p>Medium • 25 Questions</p>
+
+</div>
+
+<div class="pattern-card">
+
+<h3>Binary Search Tree</h3>
+
+<p>Medium • 14 Questions</p>
+
+</div>
+
+<div class="pattern-card">
+
+<h3>Heap / Priority Queue</h3>
+
+<p>Medium • 16 Questions</p>
+
+</div>
+
+<div class="pattern-card">
+
+<h3>Graph</h3>
+
+<p>Hard • 30 Questions</p>
+
+</div>
+
+<div class="pattern-card">
+
+<h3>Backtracking</h3>
+
+<p>Hard • 18 Questions</p>
+
+</div>
+
+<div class="pattern-card">
+
+<h3>Trie</h3>
+
+<p>Hard • 10 Questions</p>
+
+</div>
+
+<div class="pattern-card">
+
+<h3>Dynamic Programming</h3>
+
+<p>Hard • 35 Questions</p>
+
+</div>
+
+</div>
+
+</aside>
+
+<section class="learning-content card">
+
+<div class="section-header">
+
+<div>
+
+<p class="eyebrow">
+
+Current Pattern
+
+</p>
+
+<h2 id="patternTitle">
+
+Sliding Window
+
+</h2>
+
+</div>
+
+<span class="pill">
+
+Easy
+
+</span>
+
+</div>
+
+<div class="progress-bar">
+
+<span style="width:40%"></span>
+
+</div>
+
+<p class="hero-copy">
+
+Learning Progress :
+<strong>40%</strong>
+
+</p>
+
+<div class="detail-card">
+
+<h3>
+
+Pattern Overview
+
+</h3>
+
+<p>
+
+The Sliding Window pattern is used whenever a
+problem involves a contiguous subarray or substring.
+Instead of recomputing every possible range,
+the window expands and shrinks efficiently,
+reducing the overall complexity from O(n²) to O(n).
+
+</p>
+
+</div>
+<div class="detail-grid">
+
+    <div class="detail-card">
+
+        <h3>
+
+            Time Complexity
+
+        </h3>
+
+        <p>
+
+            <strong>O(n)</strong>
+
+        </p>
+
+        <h3>
+
+            Space Complexity
+
+        </h3>
+
+        <p>
+
+            <strong>O(1)</strong>
+
+        </p>
+
+    </div>
+
+    <div class="detail-card">
+
+        <h3>
+
+            Best Used When
+
+        </h3>
+
+        <ul>
+
+            <li>Contiguous arrays</li>
+
+            <li>Substring problems</li>
+
+            <li>Longest / Shortest window</li>
+
+            <li>Maximum / Minimum sum</li>
+
+            <li>Fixed or Variable window</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="detail-card">
+
+    <h3>
+
+        Pattern Recognition Checklist
+
+    </h3>
+
+    <ul>
+
+        <li>✅ Is the array contiguous?</li>
+
+        <li>✅ Can two pointers solve the problem?</li>
+
+        <li>✅ Can the window expand?</li>
+
+        <li>✅ Can the window shrink?</li>
+
+        <li>✅ Is the brute force solution O(n²)?</li>
+
+    </ul>
+
+</div>
+
+<div class="detail-card">
+
+    <h3>
+
+        Common Mistakes
+
+    </h3>
+
+    <ul>
+
+        <li>Updating the answer before shrinking the window.</li>
+
+        <li>Moving the left pointer too early.</li>
+
+        <li>Forgetting to remove elements from the frequency map.</li>
+
+        <li>Not handling duplicate characters correctly.</li>
+
+    </ul>
+
+</div>
+
+<div class="detail-card">
+
+    <h3>
+
+        Algorithm Steps
+
+    </h3>
+
+    <ol>
+
+        <li>Initialize left and right pointers.</li>
+
+        <li>Expand the right pointer.</li>
+
+        <li>Update current window information.</li>
+
+        <li>Check whether the window satisfies the condition.</li>
+
+        <li>Shrink the left pointer whenever necessary.</li>
+
+        <li>Update the final answer.</li>
+
+    </ol>
+
+</div>
+
+<div class="detail-card">
+
+    <h3>
+
+        Dry Run Example
+
+    </h3>
+
+<pre>
+
+Array = [1,2,3,4,5]
+
+Window Size = 3
+
+[1 2 3] → Sum = 6
+
+↓
+
+[2 3 4] → Sum = 9
+
+↓
+
+[3 4 5] → Sum = 12
+
+</pre>
+
+</div>
+
+<div class="detail-card">
+
+    <h3>
+
+        Reusable Code Template
+
+    </h3>
+
+    <div class="hero-actions">
+
+        <button class="btn btn-primary">
+
+            C++
+
+        </button>
+
+       
+    </div>
+
+<pre>
+
+int left = 0;
+
+for(int right = 0; right < n; right++){
+
+    // Expand Window
+
+    while(condition){
+
+        // Shrink Window
+
+        left++;
+
+    }
+
+}
+
+</pre>
+
+</div>
+
+<div class="detail-card">
+
+    <h3>
+
+        Curated Practice Questions
+
+    </h3>
+
+    <div class="question-list">
+
+        <div class="question-item">
+
+            <h4>
+
+                Easy
+
+            </h4>
+
+            <p>
+
+                Leetcode 643 - Maximum Average Subarray I
+
+            </p>
+
+            <a class="btn btn-primary"
+            href="https://leetcode.com/problems/maximum-average-subarray-i/"
+            target="_blank">
+
+                Solve
+
+            </a>
+
+        </div>
+
+        <div class="question-item">
+
+            <h4>
+
+                Medium
+
+            </h4>
+
+            <p>
+
+                Leetcode 3 - Longest Substring Without Repeating Characters
+
+            </p>
+
+            <a class="btn btn-primary"
+            href="https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+            target="_blank">
+
+                Solve
+
+            </a>
+
+        </div>
+
+        <div class="question-item">
+
+            <h4>
+
+                Hard
+
+            </h4>
+
+            <p>
+
+                Leetcode 76 - Minimum Window Substring
+
+            </p>
+
+            <a class="btn btn-primary"
+            href="https://leetcode.com/problems/minimum-window-substring/"
+            target="_blank">
+
+                Solve
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+            <div class="detail-card">
+
+                <h3>
+
+                    Frequently Asked Interview Questions
+
+                </h3>
+
+                <div class="question-list">
+
+                    <div class="question-item">
+
+                        <h4>
+
+                            Amazon
+
+                        </h4>
+
+                        <p>
+
+                            Leetcode 76 - Minimum Window Substring
+
+                        </p>
+
+                        <span class="pill">
+
+                            Asked Frequently
+
+                        </span>
+
+                    </div>
+
+                    <div class="question-item">
+
+                        <h4>
+
+                            Google
+
+                        </h4>
+
+                        <p>
+
+                            Leetcode 3 - Longest Substring Without Repeating Characters
+
+                        </p>
+
+                        <span class="pill">
+
+                            Top Interview
+
+                        </span>
+
+                    </div>
+
+                    <div class="question-item">
+
+                        <h4>
+
+                            Microsoft
+
+                        </h4>
+
+                        <p>
+
+                            Leetcode 209 - Minimum Size Subarray Sum
+
+                        </p>
+
+                        <span class="pill">
+
+                            Recent
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="detail-card">
+
+                <h3>
+
+                    Pattern Progress
+
+                </h3>
+
+                <div class="summary-grid">
+
+                    <div class="progress-card card">
+
+                        <h3>Theory</h3>
+
+                        <p class="metric">100%</p>
+
+                    </div>
+
+                    <div class="progress-card card">
+
+                        <h3>Practice</h3>
+
+                        <p class="metric">40%</p>
+
+                    </div>
+
+                    <div class="progress-card card">
+
+                        <h3>Interview</h3>
+
+                        <p class="metric">20%</p>
+
+                    </div>
+
+                    <div class="progress-card card">
+
+                        <h3>Overall</h3>
+
+                        <p class="metric">53%</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-actions">
+
+                <button class="btn btn-primary" id="completePattern">
+
+                    ✓ Mark Pattern as Completed
+
+                </button>
+
+                <button class="btn btn-secondary" id="nextPattern">
+
+                    Next Recommended Pattern →
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </section>
+
+</main>
+
+<script src="../shared/auth.js"></script>
+<script src="learningData.js"></script>
+<script src="learning.js"></script>
+
+</body>
+
+</html>

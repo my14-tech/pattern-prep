@@ -1,25 +1,37 @@
-const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const connectDB = require('../config/db');
-const Algorithm = require('../models/Algo');
+const Pattern = require('../models/Pattern');
 const Question = require('../models/Question');
 
 dotenv.config();
 
-const algorithmSeed = [
+const patternSeed = [
   {
     name: 'Sliding Window',
     category: 'Arrays & Strings',
-    description: 'A pattern for handling subarrays and substrings with a moving window.',
-    difficultyLevels: ['Easy', 'Medium'],
+    description: 'Use a moving window to solve subarray and substring problems efficiently.',
+    difficulty: 'Beginner',
+    prerequisites: ['Arrays', 'Hashing'],
+    estimatedTime: '3 Hours',
+    roadmapOrder: 1,
     totalQuestions: 8,
+    popularityScore: 95,
+    resources: [
+      { title: 'Pattern Guide', url: 'https://example.com/sliding-window' },
+      { title: 'Visual Explanation', url: 'https://example.com/sliding-window-visual' },
+    ],
   },
   {
     name: 'Two Pointers',
     category: 'Arrays & Sorting',
-    description: 'Use two pointers to traverse the array from both ends or at different speeds.',
-    difficultyLevels: ['Easy', 'Medium', 'Hard'],
+    description: 'Use two pointers to traverse arrays efficiently from both ends or at different speeds.',
+    difficulty: 'Beginner',
+    prerequisites: ['Arrays'],
+    estimatedTime: '2 Hours',
+    roadmapOrder: 2,
     totalQuestions: 10,
+    popularityScore: 90,
+    resources: [{ title: 'Practice Set', url: 'https://example.com/two-pointers' }],
   },
 ];
 
@@ -28,30 +40,29 @@ const questionSeed = [
     title: 'Maximum Sum Subarray of Size K',
     description: 'Find the maximum sum of any contiguous subarray of size k.',
     difficulty: 'Easy',
-    algoName: 'Sliding Window',
+    patternName: 'Sliding Window',
     tags: ['sliding-window', 'arrays'],
-    externalLink: 'https://example.com/max-subarray-size-k',
+    externalLink: 'https://leetcode.com',
   },
   {
     title: 'Pair With Target Sum',
     description: 'Find indices of two numbers that add up to a target value.',
     difficulty: 'Easy',
-    algoName: 'Two Pointers',
-    tags: ['two-pointers', 'sorting'],
-    externalLink: 'https://example.com/pair-with-target-sum',
+    patternName: 'Two Pointers',
+    tags: ['two-pointers', 'arrays'],
+    externalLink: 'https://www.geeksforgeeks.org',
   },
 ];
 
 const importData = async () => {
   try {
     await connectDB();
-
-    await Algorithm.deleteMany();
+    await Pattern.deleteMany();
     await Question.deleteMany();
 
-    const createdAlgorithms = await Algorithm.insertMany(algorithmSeed);
-    const algorithmMap = createdAlgorithms.reduce((map, algo) => {
-      map[algo.name] = algo._id;
+    const createdPatterns = await Pattern.insertMany(patternSeed);
+    const patternMap = createdPatterns.reduce((map, pattern) => {
+      map[pattern.name] = pattern._id;
       return map;
     }, {});
 
@@ -59,7 +70,7 @@ const importData = async () => {
       title: question.title,
       description: question.description,
       difficulty: question.difficulty,
-      algoId: algorithmMap[question.algoName],
+      algoId: patternMap[question.patternName],
       tags: question.tags,
       externalLink: question.externalLink,
     }));
