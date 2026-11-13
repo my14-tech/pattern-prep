@@ -5,8 +5,8 @@ const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 
 const algorithmRoutes = require('./routes/algorithmsRoutes');
-const questionRoutes = require('./routes/questionRoutes');
-const progressRoutes = require('./routes/progressRoutes');
+const questionRoutes = require('./routes/questionroutes');
+const progressRoutes = require('./routes/progressroutes');
 const authRoutes = require('./routes/authRoutes');
 
 const notFound = require('./middleware/notFoundMiddleware');
