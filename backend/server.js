@@ -9,8 +9,8 @@ const questionRoutes = require('./routes/questionroutes');
 const progressRoutes = require('./routes/progressroutes');
 const authRoutes = require('./routes/authRoutes');
 
-const notFound = require('./middleware/notFoundMiddleware');
-const errorHandler = require('./middleware/errorMiddleware');
+const notFound = require('./middleware/notfoundmiddleware');
+const errorHandler = require('./middleware/errormiddleware');
 
 dotenv.config();
 
