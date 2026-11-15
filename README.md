@@ -2,9 +2,13 @@
 
 ### Learn DSA Patterns, Not Just Solutions.
 
-Pattern Prep is a pattern-based **Data Structures & Algorithms (DSA) learning and coding interview preparation platform** designed to help students understand *how to recognize and solve problems* instead of memorizing individual solutions.
+**Pattern Prep** is a full-stack Data Structures & Algorithms (DSA) learning and coding interview preparation platform designed to help students understand how to recognize and solve problems instead of memorizing individual solutions.
 
 Instead of randomly solving hundreds of coding problems, Pattern Prep organizes preparation around reusable problem-solving patterns and connects learning, recognition, practice, interview preparation, and progress tracking into one workflow.
+
+🌐 **Live Demo:** [Add your deployed frontend URL]
+
+💻 **GitHub Repository:** https://github.com/my14-tech/pattern-prep
 
 ---
 
@@ -15,8 +19,6 @@ Traditional DSA preparation often looks like:
 ```text
 Problem → Solution → Memorize → Next Problem
 ```
-
-This can make it difficult to recognize the underlying technique when a new problem is presented.
 
 Pattern Prep follows a different approach:
 
@@ -36,245 +38,195 @@ Interview Preparation
 Progress Analysis
 ```
 
-The objective is to build **problem-solving intuition**, not solution memorization.
+The objective is to build problem-solving intuition, not solution memorization.
 
 ---
 
-# 🚀 Key Features
+## 🚀 Key Features
 
-## 📚 Pattern-Based Learning
+### 📚 Pattern-Based Learning
+- Learn DSA through reusable problem-solving patterns.
+- Understand pattern recognition signals.
+- Explore algorithm explanations and dry runs.
+- Study time and space complexity.
+- Access reusable code templates.
+- Practice questions organized by pattern.
 
-Learn DSA through reusable problem-solving patterns.
+### 🧩 Pattern Trainer
+- Practice identifying the correct pattern.
+- Solve pattern-based scenarios.
+- Get instant feedback and explanations.
+- Track assessment performance.
 
-Each pattern provides:
+### 💻 Practice Zone
+- Explore curated coding interview questions.
+- Search and filter questions.
+- Filter by pattern and difficulty.
+- Bookmark questions.
+- Mark questions as solved.
+- Access external coding problems.
 
-* Pattern overview
-* Recognition signals
-* When to use the pattern
-* Step-by-step algorithm
-* Dry run
-* Time complexity
-* Space complexity
-* Common mistakes
-* Reusable code templates
-* Practice questions
-* Interview questions
-* Company relevance
-* Learning resources
+### 🏢 Interview Hub
+- Explore company-specific interview preparation.
+- Access interview questions and preparation resources.
+- Prepare for companies such as Amazon, Google, Microsoft, Adobe, Uber and more.
 
----
+### 📊 Progress & Analytics
+- Track questions solved.
+- Monitor learning progress.
+- Analyze pattern completion.
+- Identify stronger and weaker areas.
+- Review preparation performance.
 
-## 🧩 Pattern Trainer
-
-Practice identifying the correct pattern before writing code.
-
-The trainer helps users understand:
-
-> "Which technique should I use for this problem?"
-
-It provides:
-
-* Pattern-based scenarios
-* Multiple-choice options
-* Instant feedback
-* Explanations
-* Score tracking
-* Progress tracking
-
----
-
-## 💻 Practice Zone
-
-Practice curated coding interview questions organized by pattern.
-
-Users can:
-
-* Search questions
-* Filter by pattern
-* Filter by difficulty
-* Filter by company
-* Mark questions as solved
-* Bookmark questions
-* Open external coding problems
-* Track completion progress
+### 🤖 AI Mentor
+- Dedicated AI mentor interface.
+- Designed for DSA explanations, coding hints and personalized learning support.
+- Current responses may use mock/local functionality; live AI API integration is planned.
 
 ---
 
-## 🏢 Interview Hub
-
-Prepare for company-specific interviews.
-
-The Interview Hub organizes preparation around companies such as:
-
-* Amazon
-* Google
-* Microsoft
-* Meta
-* Adobe
-* Uber
-* Atlassian
-* Goldman Sachs
-* Flipkart
-* Walmart Global Tech
-
-Company preparation includes:
-
-* Interview rounds
-* Preparation roadmap
-* Frequently asked questions
-* Interview experiences
-* Preparation tips
-* Useful resources
-
----
-
-## 📊 Progress & Analytics
-
-Track preparation progress through:
-
-* Questions solved
-* Bookmarked questions
-* Pattern completion
-* Strongest patterns
-* Weakest patterns
-* Difficulty distribution
-* Overall completion
-* Learning progress
-
-The purpose of analytics is to identify **what to revise next**, rather than simply displaying numbers.
-
----
-
-## 🤖 AI Mentor
-
-The project is designed to support an AI mentor interface  for:
-
-* DSA concept explanations
-* Pattern explanations
-* Coding hints
-* Debugging assistance
-* Practice question generation
-* Personalized recommendations
-* Interview preparation
-* Study planning
-
-The current frontend can use local/mock responses until the AI backend is connected.
-
----
-
-# 🛠️ Tech Stack
-
-## Current Version
+## 🛠️ Tech Stack
 
 ### Frontend
-
-* HTML5
-* CSS3
-* JavaScript (ES6+)
-* CSS Grid
-* Flexbox
-* Responsive Design
-* LocalStorage
-
-### Development Tools
-
-* Git
-* GitHub
-* VS Code
-
----
-
-# 🔮 Planned Backend
-
-The project is designed to evolve into a full-stack application using:
-
-* Node.js
-* Express.js
-* REST APIs
-* MongoDB
-* Mongoose
-* JWT Authentication
-* bcrypt
-
-The backend will eventually handle:
-
-* User accounts
-* Authentication
-* User progress
-* Question data
-* Pattern data
-* Interview data
-* Personalized recommendations
-
-# 🎯 Target Users
-
-Pattern Prep is designed primarily for:
-
-* College students preparing for placements
-* DSA beginners
-* Internship applicants
-* Software engineering interview candidates
-* Students preparing for coding rounds
-
----
-
-# 🧠 Core Philosophy
-
-Pattern Prep is built around one principle:
-
-> **Don't just memorize solutions. Learn to recognize the pattern behind the problem.**
-
-A student who understands the underlying pattern can transfer that knowledge to many different problems.
-
----
-
-# 🚧 Current Status
-
-### Frontend
-
-* [x] Home
-* [x] Assessment
-* [x] Learning
-* [x] Pattern Trainer
-* [x] Practice
-* [x] Interview Hub
-* [x] Analytics
-* [x] Dashboard
-* [x] AI Mentor interface
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- CSS Grid
+- Flexbox
+- LocalStorage
 
 ### Backend
+- Node.js
+- Express.js
+- REST APIs
+- MongoDB
+- Mongoose
+- Password hashing
 
-* [ ] User authentication
-* [ ] REST API
-* [ ] MongoDB integration
-* [ ] Persistent user profiles
-* [ ] Server-side progress tracking
-* [ ] AI API integration
-
-These backend features are part of the planned full-stack version.
-
----
-
-# 🔮 Future Improvements
-
-Planned improvements include:
-
-* Full-stack authentication
-* Persistent user profiles
-* Personalized learning paths
-* AI-powered hints
-* AI mock interviews
-* Coding playground
-* Spaced repetition
-* Daily revision plans
-* Advanced analytics
-* Company-specific preparation plans
-* Real-time coding evaluation
+### Deployment & Tools
+- Git
+- GitHub
+- VS Code
+- MongoDB Atlas
+- Render
 
 ---
 
-# 👩‍💻 Author
+## 🏗️ Application Architecture
+
+```text
+             User
+               |
+               v
+       Frontend Application
+        HTML, CSS, JavaScript
+               |
+               v
+          REST API Calls
+               |
+               v
+       Node.js + Express.js
+               |
+               v
+          MongoDB Atlas
+               |
+               v
+       Persistent Application Data
+```
+
+---
+
+## 📸 Screenshots
+
+Add screenshots of the deployed application here.
+
+| Feature | Preview |
+|---|---|
+| Home Page | `screenshots/home.png` |
+| Login | `screenshots/login.png` |
+| Registration | `screenshots/register.png` |
+| Learning | `screenshots/learning.png` |
+| Assessment | `screenshots/assessment.png` |
+| Interview Hub | `screenshots/interview.png` |
+| Analytics | `screenshots/analysis.png` |
+| AI Mentor | `screenshots/AI.png` |
+
+---
+
+## ⚙️ Local Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/my14-tech/pattern-prep.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd pattern-prep
+```
+
+### 3. Backend setup
+
+```bash
+cd backend
+npm install
+```
+
+Create a `.env` file inside the backend folder:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+```
+
+### 4. Start the backend
+
+```bash
+npm start
+```
+
+### 5. Run the frontend
+
+Open the frontend `index.html` file using a local development server.
+
+Configure the frontend API base URL to point to your local backend when testing locally.
+
+---
+
+## 🎯 Target Users
+
+- College students preparing for placements.
+- DSA beginners.
+- Internship applicants.
+- Software engineering interview candidates.
+- Students preparing for coding rounds.
+
+---
+
+## 🔮 Future Improvements
+
+- JWT-based authentication.
+- Enhanced authentication and authorization.
+- AI-powered coding hints.
+- AI mock interviews.
+- Coding playground.
+- Personalized learning paths.
+- Spaced repetition.
+- Daily revision plans.
+- Advanced analytics.
+- Company-specific preparation roadmaps.
+- Automated coding evaluation.
+
+---
+
+## 👩‍💻 Author
 
 **Nimisha Chawla**
 
-Pattern Prep is a project focused on improving the way students learn DSA and prepare for software engineering interviews.
+Built to improve how students learn Data Structures & Algorithms and prepare for software engineering interviews.
+
+---
+
+⭐ If you find Pattern Prep useful, consider giving the repository a star!
