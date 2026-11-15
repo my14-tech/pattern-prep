@@ -1,4 +1,4 @@
-const apiBase = 'http://localhost:5000/api';
+const apiBase = 'http://pattern-prep-backend.onrender.com/api';
 
 const defaultPatterns = [
   {
