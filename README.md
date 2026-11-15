@@ -136,20 +136,31 @@ The objective is to build problem-solving intuition, not solution memorization.
 
 ---
 
-## 📸 Screenshots
+## 📸 Application Screenshots
 
-Add screenshots of the deployed application here.
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
 
-| Feature | Preview |
+### Learning
+![Learning](screenshots/learning.png)
+
+### Assessment
+![Assessment](screenshots/assessment.png)
+
+### Interview Hub
+![Interview Hub](screenshots/interview.png)
+
+### Progress & Analytics
+![Analytics](screenshots/analysis.png)
+
+### AI Mentor
+![AI Mentor](screenshots/ai.png)
+
+### Authentication
+
+| Login | Registration |
 |---|---|
-| Home Page | `screenshots/home.png` |
-| Login | `screenshots/login.png` |
-| Registration | `screenshots/register.png` |
-| Learning | `screenshots/learning.png` |
-| Assessment | `screenshots/assessment.png` |
-| Interview Hub | `screenshots/interview.png` |
-| Analytics | `screenshots/analysis.png` |
-| AI Mentor | `screenshots/AI.png` |
+| ![Login](screenshots/login.png) | ![Register](screenshots/register.png) |
 
 ---
 
